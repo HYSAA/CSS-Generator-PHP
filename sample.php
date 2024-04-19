@@ -29,6 +29,9 @@ if ($file) {
     echo "Unable to create file.";
 }
 
+
+///test the integrity of the file
+
 // Reading from a file
 $file = fopen($filename, "r"); // Open file for reading
 if ($file) {
