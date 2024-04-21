@@ -9,7 +9,7 @@ if ($file) {
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            color: #333;
+            color: #521;
         }
         .container {
             max-width: 960px;
