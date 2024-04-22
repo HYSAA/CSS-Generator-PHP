@@ -4,7 +4,7 @@
 $filename = "styles.css";
 $file = fopen($filename, "w"); // Open file for writing
 if ($file) {
-    // Generating CSS content
+   
     $cssContent = "
         body {
             font-family: Arial, sans-serif;
@@ -23,7 +23,7 @@ if ($file) {
     
     // Writing CSS content to the file
     fwrite($file, $cssContent);
-    fclose($file); // Close the file
+    fclose($file); 
     echo "File created successfully.";
 } else {
     echo "Unable to create file.";
@@ -31,7 +31,6 @@ if ($file) {
 
 
 ///test the integrity of the file
-
 // Reading from a file
 $file = fopen($filename, "r"); // Open file for reading
 if ($file) {
