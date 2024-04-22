@@ -32,8 +32,16 @@ function generateCSSFromArray($cssArray) {
 // Generate CSS string from array
 $cssContent = generateCSSFromArray($cssContentArray);
 
-// Output CSS content
-echo "<style>\n$cssContent\n</style>\n";
+// Write CSS content to a file
+$cssFileName = 'styles.css'; // Name of the CSS file
+$cssFile = fopen($cssFileName, 'w'); // Open file for writing
+if ($cssFile) {
+    fwrite($cssFile, $cssContent); // Write CSS content to the file
+    fclose($cssFile); // Close the file
+    echo "CSS file '$cssFileName' generated successfully.";
+} else {
+    echo "Error: Unable to open CSS file for writing.";
+}
 
 // Test the integrity of the array
 echo "<br>Array content: <pre>" . htmlspecialchars(print_r($cssContentArray, true)) . "</pre>";

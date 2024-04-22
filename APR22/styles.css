@@ -1,0 +1,11 @@
+
+    .image-box {
+        border: 2px solid #ccc;
+        padding: 10px;
+        max-width: 400px;
+        margin: 0 auto;
+        background: url('https://th.bing.com/th/id/OIP.1XXE46JQynPUC6-N2dVC6gHaNK?rs=1&pid=ImgDetMain') center center no-repeat;
+        background-size: cover;
+    }
+    
+/* This is appended content. */

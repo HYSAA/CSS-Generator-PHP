@@ -1,16 +1,49 @@
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #521;
-        }
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        /* Add more CSS rules as needed */
+    * {padding: 0; margin: 0; box-sizing: border-box;}
+    body {height: 900px;}
+    header {
+        background: url('https://th.bing.com/th/id/OIP.1XXE46JQynPUC6-N2dVC6gHaNK?rs=1&pid=ImgDetMain');
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 0 85% 85% / 30%;
+    }
+    header .overlay {
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        color: #FFF;
+        text-shadow: 1px 1px 1px #333;
+        background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+    }
+    
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 80px;
+        margin-bottom: 30px;
+    }
+    
+    h3, p {
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 30px;
+    }
+    
+    button {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        color: #444;
+        background: #fff;
+        margin-bottom: 50px;
+        box-shadow: 0 3px 20px 0 #0000003b;
+    }
+    button:hover {
+        cursor: pointer;
+    }
     
 /* This is appended content. */
