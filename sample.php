@@ -3,68 +3,52 @@
 // Creating a file
 $filename = "styles.css";
 $file = fopen($filename, "w"); // Open file for writing
+
 if ($file) {
    
-    $cssContent = "
-    *{padding: 0; margin: 0; box-sizing: border-box;}
-    body{height: 900px;}
-    header {
-        background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+    // Define CSS rules organized by HTML tags
+    $cssContent = array(
+        'body' => [],
+        'header' => []
+        // Add more HTML tags and associated CSS rules here
+    );
+    
+    // Function to add CSS rules for a specific HTML tag
+    function addCssRule(&$cssContent, $tag, $rule) {
+        $cssContent[$tag][] = $rule;
+    }
+    
+    // Method chaining to build CSS input
+    addCssRule($cssContent, 'body', "  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;");
+    addCssRule($cssContent, 'header', "header {
+        background-color: #333;
+        color: #fff;
         text-align: center;
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        background-attachment: fixed;
-        position: relative;
-        overflow: hidden;
-        border-radius: 0 0 85% 85% / 30%;
-    }
-    header .overlay{
-        width: 100%;
-        height: 100%;
-        padding: 50px;
-        color: #FFF;
-        text-shadow: 1px 1px 1px #333;
-      background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
-        
+        padding: 80px 0;
+        }");
+    addCssRule($cssContent, 'header', "header .overlay{
+            width: 1000%;
+            height: 100%;
+            padding: 50px;
+            color: #FFF;
+            text-shadow: 1px 1px 1px #333;
+            background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+        }");
+    
+    // Write CSS content to the file
+    foreach ($cssContent as $htmlTag => $rules) {
+        fwrite($file, implode("\n", $rules) . "\n");
     }
     
-    h1 {
-        font-family: 'Dancing Script', cursive;
-        font-size: 80px;
-        margin-bottom: 30px;
-    }
-    
-    h3, p {
-        font-family: 'Open Sans', sans-serif;
-        margin-bottom: 30px;
-    }
-    
-    button {
-        border: none;
-        outline: none;
-        padding: 10px 20px;
-        border-radius: 50px;
-        color: #444;
-        background: #fff;
-        margin-bottom: 50px;
-        box-shadow: 0 3px 20px 0 #0000003b;
-    }
-    button:hover{
-        cursor: pointer;
-    }
-    ";
-    
-    // Writing CSS content to the file
-    fwrite($file, $cssContent);
     fclose($file); 
     echo "File created successfully.";
 } else {
     echo "Unable to create file.";
 }
 
-
-///test the integrity of the file
+// Test the integrity of the file
 // Reading from a file
 $file = fopen($filename, "r"); // Open file for reading
 if ($file) {
