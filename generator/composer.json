@@ -1,0 +1,20 @@
+{
+    "name": "generator/css-generator",
+    "description": "Description of your package",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alberto Anunciado",
+            "email": "aj.anunciado@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CssBuilder\\": ""
+        }
+    },
+    "files": [
+        "src/generates.php"
+    ],
+    "require": {}
+}

@@ -7,11 +7,11 @@ class CssBuilder {
 
     public function addCssRule($tag, $rule) {
         $this->cssContent[$tag][] = $rule;
-        return $this; // Return $this to enable method chaining
+        return $this; 
     }
 
     public function buildCssFile($filename) {
-        $file = fopen($filename, "w"); // Open file for writing
+        $file = fopen($filename, "w"); 
         if ($file) {
             foreach ($this->cssContent as $htmlTag => $rules) {
                 fwrite($file, implode("\n", $rules) . "\n");

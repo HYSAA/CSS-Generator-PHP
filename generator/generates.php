@@ -1,12 +1,10 @@
 <?php
 
-// Include or require the CssBuilder.php file
-require_once 'CssBuilder.php';
+require_once 'vendor/autoload.php'; // Include the Composer autoloader
 
-// Import the CssBuilder namespace
 use CssBuilder\CssBuilder;
 
-// Create an instance of CssBuilder
+
 $builder = new CssBuilder();
 
 // Method chaining to build CSS input
