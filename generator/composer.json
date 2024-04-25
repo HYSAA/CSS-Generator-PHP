@@ -1,6 +1,6 @@
 {
-    "name": "generator/css-generator",
-    "description": "Description of your package",
+    "name": "ajanunciado/css-generator",
+    "description": "CSS GENERATOR",
     "type": "library",
     "authors": [
         {
@@ -16,5 +16,7 @@
     "files": [
         "src/generates.php"
     ],
-    "require": {}
+    "require": {
+        
+    }
 }
