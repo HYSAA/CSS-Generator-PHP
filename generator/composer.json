@@ -1,0 +1,22 @@
+{
+    "name": "ajanunciado/css-generator",
+    "description": "CSS GENERATOR",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alberto Anunciado",
+            "email": "aj.anunciado@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CssBuilder\\": ""
+        }
+    },
+    "files": [
+        "src/generates.php"
+    ],
+    "require": {
+        
+    }
+}
