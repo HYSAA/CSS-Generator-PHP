@@ -1,6 +1,7 @@
 <?php
 
-namespace MyNamespace;
+// namespace MyNamespace;
+require_once 'FileHandler.php';
 
 class CSSGenerator {
     private $css_content = "";

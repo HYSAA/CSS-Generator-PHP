@@ -1,7 +1,8 @@
 <?php
 
-namespace MyNamespace;
-require_once 'autoloader.php';
+// namespace MyNamespace;
+require_once 'FileHandler.php';
+include 'CSSGenerator.php';
 
 $filePath = "style.css";
 FileHandler::createFile($filePath);
@@ -32,4 +33,4 @@ $generator->addSelector("body", null, null)
     ->addProperty("color", "#ff0000")
     ->addCloseSelector();
 
-// FileHandler::saveCSSToFile($filePath, $generator->getCSSContent());
+FileHandler::saveCSSToFile($filePath, $generator->getCSSContent());
