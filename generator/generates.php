@@ -1,13 +1,11 @@
 <?php
 
-require_once 'vendor/autoload.php'; // Include the Composer autoloader
-
+require_once 'vendor/autoload.php'; 
 use CssBuilder\CssBuilder;
 
 
 $builder = new CssBuilder();
 
-// Method chaining to build CSS input
 $builder->addCssRule('body', "body {
         font-family: Arial, sans-serif;
         margin: 0;

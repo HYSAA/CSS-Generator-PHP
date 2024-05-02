@@ -1,6 +1,5 @@
 <?php
 
-// namespace MyNamespace;
 
 class FileHandler {
     public static function writeCSS($filePath, $css) {
@@ -24,7 +23,6 @@ class FileHandler {
         self::writeCSS($filePath, $css);
     }
 
-    //html
 
     public static function writeHTML($filePathHTML, $html) {
         file_put_contents($filePathHTML, $html);

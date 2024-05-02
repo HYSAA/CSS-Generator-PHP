@@ -1,6 +1,6 @@
 <?php
 
-// namespace MyNamespace;
+
 require_once 'FileHandler.php';
 include 'CSSGenerator.php';
 
