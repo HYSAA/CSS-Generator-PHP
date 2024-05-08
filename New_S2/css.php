@@ -1,8 +1,7 @@
 <?php
 
-// namespace MyNamespace;
-require_once 'FileHandler.php';
-include 'CSSGenerator.php';
+namespace MyNamespace;
+require_once 'autoloader.php';
 
 $filePath = "style.css";
 FileHandler::createFile($filePath);
@@ -28,18 +27,9 @@ $generator->addSelector("body", null, null)
     ->addProperty("background-color", "#000")
     ->addProperty("color", "#fff")
     ->addCloseSelector()
-
-    ->addSelector(null, "id", "section")
-    ->addProperty("width", "100%")
-    ->addProperty("margin", "0 auto")
-    ->addProperty("padding", "20px")
-    ->addProperty("border", "4mm ridge rgba(211, 220, 50, .6);")
-    ->addProperty("background-color", "#000")
-    ->addProperty("color", "#fff")
-    ->addCloseSelector()
     
     ->addSelector("p", null, null)
     ->addProperty("color", "#ff0000")
     ->addCloseSelector();
 
-FileHandler::saveCSSToFile($filePath, $generator->getCSSContent());
+// FileHandler::saveCSSToFile($filePath, $generator->getCSSContent());
