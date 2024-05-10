@@ -1,0 +1,37 @@
+body {
+	font-family: Times New Roman;
+	background-color: #f0f0f0;
+}
+
+#main {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 4mm ridge rgba(211, 220, 50, .6);;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 4mm ridge rgba(211, 220, 50, .6);;
+	background-color: #000;
+	color: #fff;
+}
+
+<<<<<<< HEAD:NEW/style.css
+#section {
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 4mm ridge rgba(211, 220, 50, .6);;
+	background-color: #000;
+	color: #fff;
+}
+
+=======
+>>>>>>> d39bcf77a9703c694370133524dba94179766980:Final/style.css
+p {
+	color: #ff0000;
+}
+
