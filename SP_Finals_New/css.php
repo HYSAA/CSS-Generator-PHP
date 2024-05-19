@@ -3,7 +3,7 @@
 require_once 'FileHandler.php';
 require_once 'CSSGenerator.php'; 
 
-$filePath = "../SP_Finals/css/style.css";
+$filePath = "../SP_Finals_New/css/style.css";
 FileHandler::createFile($filePath1);
 $generator = new MyNamespace\CSSGenerator();
 $generator
@@ -18,7 +18,7 @@ $generator
     ->addProperty("font-family", "arial, verdana, tahoma, sans-serif")
     ->addCloseSelector();
 
-$filePath1 = "../SP_Finals/css/header.css";
+$filePath1 = "../SP_Finals_New/css/header.css";
 FileHandler::createFile($filePath1);
 $generator1 = new MyNamespace\CSSGenerator();
 $generator1
@@ -104,7 +104,7 @@ $generator1
     ->addCloseSelector();
 
 // Second CSS file
-$filePath2 = "../SP_Finals/css/body.css";
+$filePath2 = "../SP_Finals_New/css/body.css";
 FileHandler::createFile($filePath2);
 $generator2 = new MyNamespace\CSSGenerator();
 $generator2
@@ -215,7 +215,7 @@ $generator2
     ->addProperty("text-align", "center")
     ->addCloseSelector();
 
-$filePath3 = "../SP_Finals/css/footer.css";
+$filePath3 = "../SP_Finals_New/css/footer.css";
 FileHandler::createFile($filePath3);
 $generator3 = new MyNamespace\CSSGenerator();
 $generator3

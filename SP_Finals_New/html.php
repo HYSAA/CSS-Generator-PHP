@@ -10,10 +10,10 @@ $htmlGenerator = new MyNamespace\HTMLGenerator();
 
 $htmlGenerator->addTag('header')
 ->addTag('title')->addContent('Libretto Books')->addCloseTag('title')
-->addLinkTag('../SP_Finals/css/style.css', ['rel' => 'stylesheet'])
-->addLinkTag('../SP_Finals/css/header.css', ['rel' => 'stylesheet'])
-->addLinkTag('../SP_Finals/css/body.css', ['rel' => 'stylesheet'])
-->addLinkTag('../SP_Finals/css/footer.css', ['rel' => 'stylesheet'])
+->addLinkTag('../SP_Finals_New/css/style.css', ['rel' => 'stylesheet'])
+->addLinkTag('../SP_Finals_New/css/header.css', ['rel' => 'stylesheet'])
+->addLinkTag('../SP_Finals_New/css/body.css', ['rel' => 'stylesheet'])
+->addLinkTag('../SP_Finals_New/css/footer.css', ['rel' => 'stylesheet'])
 
     ->addTag('section', ['id' => 'header'])
     ->addTag('section', ['id' => 'lefthead'])->addCloseTag('section')
