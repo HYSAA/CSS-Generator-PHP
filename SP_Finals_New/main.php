@@ -11,7 +11,7 @@ FileHandler::saveCSSToFile($filePath1, $generator1->getCSSContent());
 FileHandler::saveCSSToFile($filePath2, $generator2->getCSSContent());
 FileHandler::saveCSSToFile($filePath3, $generator3->getCSSContent());
 
-header('Location: ../SP_Finals/index.html');
+header('Location: ../SP_Finals_New/index.html');
 exit;
 
 ?>
