@@ -1,0 +1,11 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin-top: 20px;
+	background-color: #ccc;
+	font-family: arial, verdana, tahoma, sans-serif;
+}
+
